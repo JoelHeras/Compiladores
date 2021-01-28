@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practica1
 {
-    class Principal
-    {
-        //Rutas de prueba
-        //C:\Users\joel_\Documents\Compiladores 3CV5\Practicas\Practica 1\automata.af
-        //C:\Users\joel_\Documents\Compiladores 3CV5\Practicas\Entrada.af
+    class Principal{
         static void Main(string[] args){
             Automata automata = new Automata();
             GestionadorAutomata gestAuto = new GestionadorAutomata();
@@ -34,8 +30,7 @@ namespace Practica1
                 }
             }
             Console.WriteLine("Definiendo el tipo del automata....");
-            if (automata.EsAFN() == false && automata.EsAFD() == false)
-            {
+            if (automata.EsAFN() == false && automata.EsAFD() == false){
                 Console.WriteLine("No es un automata");
                 Console.ReadKey();
                 return;
